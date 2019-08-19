@@ -19,3 +19,8 @@ The example script can be seen at [`/src/index.ts`](/src/index.ts), and the HTML
 ## Plan
 
 [gitignore-parser](https://github.com/codemix/gitignore-parser) integration.
+
+## Used in
+
+- <https://github.com/patarapolw/zh-slides>
+- <https://github.com/patarapolw/md-slides>
