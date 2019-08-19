@@ -12,7 +12,10 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].min.js"
+    filename: "[name].min.js",
+    library: 'beta',
+    libraryTarget: 'umd',
+    globalObject: "typeof self !== 'undefined' ? self : this"
   },
   module: {
     rules: [
