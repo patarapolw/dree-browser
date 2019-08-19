@@ -1,8 +1,8 @@
 {
   "name": "dree-browser",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "File browser via passing dree object or the like",
-  "main": "dist/dree-browser.js",
+  "main": "dist/dree-browser.min.js",
   "types": "dist/dree-browser.d.ts",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
