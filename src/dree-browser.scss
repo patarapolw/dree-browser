@@ -1,0 +1,55 @@
+.dree-browser {
+  display: flex;
+  top: 0;
+  bottom: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100%;
+  flex-wrap: nowrap;
+
+  .column {
+    height: 100%;
+    overflow: scroll;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 15em;
+    border-right: 1px solid lightgray;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-block-start: 0;
+    }
+  }
+
+  .icon {
+    height: 1em;
+    width: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .item {
+    span {
+      font-family: sans-serif;
+      line-height: 1.5em;
+
+      &:hover {
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .file-content {
+    // max-width: 500px;
+    flex: 0 0 500px;
+    height: 100%;
+    border-right: 1px solid lightgray;
+  }
+
+  pre {
+    white-space: pre-wrap;
+  }
+}

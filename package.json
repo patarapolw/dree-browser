@@ -1,0 +1,50 @@
+{
+  "name": "dree-browser",
+  "version": "0.1.0",
+  "description": "File browser via passing dree object or the like",
+  "main": "dist/dree-browser.js",
+  "types": "dist/dree-browser.d.ts",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "prepare": "npm run build",
+    "deploy": "webpack --config webpack.dev.js && gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dree",
+    "file-manager",
+    "file-browser"
+  ],
+  "author": {
+    "name": "Pacharapol Withayasakpunt",
+    "email": "patarapolw@gmail.com",
+    "url": "https://polvcode.dev"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "dotenv": "^8.1.0",
+    "dree": "^2.1.10",
+    "file-loader": "^4.2.0",
+    "gh-pages": "^2.1.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^7.2.0",
+    "terser-webpack-plugin": "^1.4.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patarpolw/dree-browser.git"
+  },
+  "dependencies": {
+    "vscode-icons-js": "^9.3.0"
+  }
+}
