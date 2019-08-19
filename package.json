@@ -1,6 +1,6 @@
 {
   "name": "dree-browser",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "File browser via passing dree object or the like",
   "main": "dist/dree-browser.min.js",
   "types": "dist/dree-browser.d.ts",
