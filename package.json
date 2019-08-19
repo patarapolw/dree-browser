@@ -1,14 +1,14 @@
 {
   "name": "dree-browser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "File browser via passing dree object or the like",
   "main": "dist/dree-browser.js",
   "types": "dist/dree-browser.d.ts",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "rimraf dist && webpack --config webpack.prod.js",
     "prepare": "npm run build",
-    "deploy": "webpack --config webpack.dev.js && gh-pages -d dist",
+    "deploy": "rimraf dist && webpack --config webpack.dev.js && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -32,6 +32,7 @@
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "rimraf": "^3.0.0",
     "sass-loader": "^7.2.0",
     "terser-webpack-plugin": "^1.4.1",
     "ts-loader": "^6.0.4",
